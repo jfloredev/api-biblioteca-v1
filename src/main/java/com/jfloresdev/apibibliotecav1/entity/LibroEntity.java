@@ -20,6 +20,11 @@ public class LibroEntity {
     @Column(name = "NRO_PAGINAS", nullable = false, length = 3)
     private Integer nroPaginas;
 
+    @Column(name = "ESTADO", nullable = false , length = 1)
+    private String estado;
+
+
+
     public LibroEntity() {
     }
 
@@ -60,6 +65,14 @@ public class LibroEntity {
 
     public void setNroPaginas(Integer nroPaginas) {
         this.nroPaginas = nroPaginas;
+    }
+
+    public String getEstado() {
+        return estado;
+    }
+
+    public  void setEstado(String estado) {
+        this.estado = estado;
     }
 }
 
